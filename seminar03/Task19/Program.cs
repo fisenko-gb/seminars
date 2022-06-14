@@ -17,4 +17,4 @@ int y = y1 - y2;
 
 double rezault = Math.Sqrt(Math.Pow(x, 2) + Math.Pow(y, 2));
 
-WriteLine($"Расстояние между точками: {rezault}");
+WriteLine($"Расстояние между точками: {rezault:f2}");
