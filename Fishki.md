@@ -9,6 +9,16 @@ if(!int.TryParse(ReadLine(),out number))
     return;
 }
 
+// или так
+
+int number = 0;
+
+bool success = int.TryParse(input, out number);
+if (!success)
+{
+    WriteLine("Введены не корректные данные...");
+    return;
+}
 ========================================================================
 
 **Сокращенное если**
