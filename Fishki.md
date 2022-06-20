@@ -67,7 +67,7 @@ WriteLine(answer);
 // СокрЛП - удаление не значимых пробелов
 int[] GetArrayFromString(string arrayStr)
 {
-    string[] arS=arrayStr.Split(' ',StringSplitOptions.RemoveEmptyEntries);
+    string[] arS=arrayStr.Split(' ',StringSplitOptions.RemoveEmptyEntries); // сепаратором может выступать массив чаров
     int[] result=new int[arS.Length];
     for(int i=0; i<arS.Length;i++)
     {
