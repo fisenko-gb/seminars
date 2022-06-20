@@ -22,13 +22,13 @@ WriteLine($"Сумма всех цифр в числе {input} = {summa}");
 
 int SumNum(int number, int length)
 {
-    int temp = 0;
+    //int temp = 0;
     int result = 0;
 
     for (int i = 0; i < length; i++)
     {
-        temp = number - number % 10;
-        result = result + (number - temp);
+        //temp = number - number % 10;
+        result += number % 10;
         number = number / 10;
     }
 
