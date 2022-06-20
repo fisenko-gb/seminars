@@ -64,3 +64,14 @@ WriteLine(answer);
 //WriteLine(String.Join("," array))
 
 ========================================================================
+// СокрЛП - удаление не значимых пробелов
+int[] GetArrayFromString(string arrayStr)
+{
+    string[] arS=arrayStr.Split(' ',StringSplitOptions.RemoveEmptyEntries);
+    int[] result=new int[arS.Length];
+    for(int i=0; i<arS.Length;i++)
+    {
+        result[i]=int.Parse(arS[i]);
+    }
+    return result;
+}
