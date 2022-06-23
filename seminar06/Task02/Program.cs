@@ -22,6 +22,5 @@ string Preobraz2(int n, int osn)
         result = $"{(n % osn)}" + result;
         n /= osn;
     }
-    //result = "1" + result;
     return result;
 }
