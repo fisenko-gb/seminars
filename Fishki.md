@@ -1,4 +1,27 @@
+========================================================================
 
+**Команды для солюшена**
+
+dotnet new sln -o Tasks //создает солюшен
+dotnet new classlib // создает библиотеку классов ?
+dotnet sln Tasks.sln add .\MyLib\MyLib.csproj // добавляет проект в солюшен
+dotnet sln Tasks.sln add .\Task0\Task0.csproj
+dotnet add .\Task0\Task0.csproj reference .\MyLib\MyLib.csproj // ???
+
+
+========================================================================
+
+**Процедура переворота массива без второго массива**
+
+void ReverseArray1(int[] array)
+{
+    for(int i=0; i<array.Length/2;i++)
+    {
+        int k=array[i];
+        array[i]=array[array.Length-i-1];
+        array[array.Length-i-1]=k;
+    }
+}
 ========================================================================
 
 **Обработка ошибки если ввели не число**
