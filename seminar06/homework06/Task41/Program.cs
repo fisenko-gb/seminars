@@ -7,5 +7,19 @@ using System;
 using static System.Console;
 
 Clear();
-WriteLine("Введите число: ");
-int namber = int.Parse(ReadLine());
+WriteLine("Введите числа через запятую: ");
+string[] arrayStr = ReadLine().Split(",", StringSplitOptions.RemoveEmptyEntries);
+Write($"{String.Join(", ", arrayStr)} -> {GetPozitiv(arrayStr)}");
+
+int GetPozitiv(string[] arrayStr)
+{
+    int result = 0;
+    for(int i=0; i < arrayStr.Length; i++)
+    {
+        if(int.Parse(arrayStr[i]) > 0)
+        {
+            result++;
+        }        
+    }
+    return result;
+}
