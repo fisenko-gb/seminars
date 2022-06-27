@@ -1,4 +1,10 @@
 ========================================================================
+using System.Linq;
+
+int[] array=ReadLine().Split(' ',StringSplitOptions.RemoveEmptyEntries).Select(x=>int.Parse(x)).OrderBy(x=>x).ToArray();
+
+
+========================================================================
 
 **Команды для солюшена**
 
