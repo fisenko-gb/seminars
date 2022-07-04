@@ -23,6 +23,6 @@ int Rezult(int numbers, int i)
     }
 
 
-    return numbers *= Rezult(numbers, i - 1);
+    return numbers * Rezult(numbers, i - 1);
 
 }
